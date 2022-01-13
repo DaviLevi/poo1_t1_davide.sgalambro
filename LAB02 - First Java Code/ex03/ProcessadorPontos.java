@@ -7,13 +7,27 @@ public class ProcessadorPontos {
 
     public static void main(String[] args){
         
-        Ponto p1 = new Ponto(1,2);
-        Ponto p2 = new Ponto(2,3);
+        // soma
+        Ponto p1 = lePontoDoTeclado();
+        Ponto p2 = lePontoDoTeclado();
 
-        Ponto[] arrayponto = {p1,p2};
+        // soma
+        Ponto p3 = p1.mais(p2);
+
+        // soma 2 numeros e armazena no terceiro
+        Ponto.somaTerceiro(p1, p2, p3);
+
+        Ponto resultadoMultiplicacao = p1.multiplica(3);
+
+        // altera estado interno
+        p1.multiplicaVoid(3);
+
+        Ponto p4 = new Ponto(1,2);
+        Ponto p5 = new Ponto(2,3);
+
+        Ponto[] arrayponto = {p4, p5};
 
         Pontos pontos = new Pontos(arrayponto);
-
 
         // calcla o ponto mais a direita
         Ponto pontoMaisADireita = pontos.pontoMaisADireita();

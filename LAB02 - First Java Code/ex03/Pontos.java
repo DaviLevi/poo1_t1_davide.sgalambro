@@ -39,8 +39,6 @@ public class Pontos {
         return pontoMaxEsquerda;
     }
 
-
-    // nao consegui replicar e terminar, falta de tempo
     public Ponto pontoMaisEmCima(){
         Ponto pontoMaxCima = null;
         float cimaMax = Float.MIN_VALUE;
