@@ -25,34 +25,48 @@ public class Pontos {
         return pontoMaxDireita;
     }
 
+    public Ponto pontoMaisAEsquerda(){
+        Ponto pontoMaxEsquerda = null;
+        float esquerdaMin = Float.MAX_VALUE;
+        for(int i = 0; i < this.pontos.length; i++){
+            Ponto pontoAtual = pontos[i];
+            float esquerdaAtual = pontoAtual.getX();
+            if(esquerdaAtual < esquerdaMin){
+                esquerdaMin = esquerdaAtual; 
+                pontoMaxEsquerda = pontoAtual;
+            }
+        }
+        return pontoMaxEsquerda;
+    }
+
 
     // nao consegui replicar e terminar, falta de tempo
     public Ponto pontoMaisEmCima(){
-        Ponto pontoMaxDireita = null;
-        float direitaMax = Float.MIN_VALUE;
+        Ponto pontoMaxCima = null;
+        float cimaMax = Float.MIN_VALUE;
         for(int i = 0; i < this.pontos.length; i++){
             Ponto pontoAtual = pontos[i];
-            float direitaAtual = pontoAtual.getX();
-            if(direitaAtual > direitaMax){
-                direitaMax = direitaAtual; 
-                pontoMaxDireita = pontoAtual;
+            float cimaAtual = pontoAtual.getY();
+            if(cimaAtual > cimaMax){
+                cimaMax = cimaAtual; 
+                pontoMaxCima = pontoAtual;
             }
         }
-        return pontoMaxDireita;
+        return pontoMaxCima;
     }
 
     public Ponto pontoMaisEmbaixo(){
-        Ponto pontoMaxDireita = null;
-        float direitaMax = Float.MIN_VALUE;
+        Ponto pontoMaxEmbaixo = null;
+        float baixoMax = Float.MAX_VALUE;
         for(int i = 0; i < this.pontos.length; i++){
             Ponto pontoAtual = pontos[i];
-            float direitaAtual = pontoAtual.getX();
-            if(direitaAtual > direitaMax){
-                direitaMax = direitaAtual; 
-                pontoMaxDireita = pontoAtual;
+            float baixoAtual = pontoAtual.getY();
+            if(baixoAtual < baixoMax){
+                baixoMax = baixoAtual; 
+                pontoMaxEmbaixo = pontoAtual;
             }
         }
-        return pontoMaxDireita;
+        return pontoMaxEmbaixo;
     }
 
 }

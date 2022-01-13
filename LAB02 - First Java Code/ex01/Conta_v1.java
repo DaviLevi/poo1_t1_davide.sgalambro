@@ -1,3 +1,5 @@
+package ex01;
+
 public class Conta_v1{
     private double saldo;
     private double limite;

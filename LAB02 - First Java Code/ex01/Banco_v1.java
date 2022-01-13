@@ -1,3 +1,5 @@
+package ex01;
+
 public class Banco_v1 {
     public static void main(String[] args) {
         Conta_v1 c1 = new Conta_v1();
