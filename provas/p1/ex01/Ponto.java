@@ -23,6 +23,10 @@ public class Ponto {
         return "(" + x + "," + y + ")";
     }
 
+    public boolean podeFormarUmRetanguloCom(Ponto outroPonto){
+        return this.x != outroPonto.getX() && this.y != outroPonto.getY();
+    }
+
     public double getX(){
         return x;
     }

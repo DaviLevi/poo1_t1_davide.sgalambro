@@ -6,6 +6,7 @@ import java.util.List;
 
 public class ContaCorrente {
     private List<Cliente> proprietarios;
+    private Agencia agencia;
     private String numeroIdentificacao;
     private LocalDate dataCriacao;
     private LocalDate dataUltimoAcesso;
