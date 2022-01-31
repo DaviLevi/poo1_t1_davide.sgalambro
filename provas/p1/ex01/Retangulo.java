@@ -12,7 +12,7 @@ public class Retangulo {
         }
         throw new IllegalArgumentException("Ai não da né mano");
     }
-
+// check: estranha essa função, mas ok
     public Retangulo(Ponto ponto1, Ponto ponto2, Ponto ponto3, Ponto ponto4){
         if(ponto1.podeFormarUmRetanguloCom(ponto2)){
             this.ponto1 = ponto1;
